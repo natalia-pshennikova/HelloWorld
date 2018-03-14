@@ -61,6 +61,34 @@ class PracticeTest {
 				, new int[] {}));
 	}	
 	
+	//Method should remove duplicated values from array, leaving first matching exemplar
+	//example: Array [1,2,4,1,2,5,7] should be converted to [1,2,3,5,7]
+	@Test
+	void removeDuplicatedTest() {
+		assertTrue(Arrays.equals(Practice.removeDuplicates(new int[] {1,3,7,9,234,895,2}), new int[] {1,3,7,9,234,895,2}));
+		assertTrue(Arrays.equals(Practice.removeDuplicates(new int[] {1,7,7,9,9,895,1}), new int[] {1,7,9,895}));
+		assertTrue(Arrays.equals(Practice.removeDuplicates(new int[] {1,1,1,1,1,1,1}), new int[] {1}));
+	}
 	
+	//Method returns string without chosen characters, ignoring case(upper\lower), example:
+	// if string = "aAbBCc" and chars [a,c], then return "Bb"
+	@Test
+	void removeCharsTest() {
+		assertEquals("Hell Br", Practice.removeChars("Hello Bro", new char[] {'o'}));
+		assertEquals("Heo Bro", Practice.removeChars("Hello Bro", new char[] {'L'}));
+		assertEquals("HelloBro", Practice.removeChars("Hello Bro", new char[] {' '}));
+		assertEquals(" ", Practice.removeChars("Hello Bro", 
+				new char[] {'H','E','l','o','b','R'}));
+	}	
+	
+	//Method creates a Map where int values are the key and string values are element values.
+	//If key is already set, then make increment key: key = key+1
+	@Test
+	void createMapTest() {
+		assertEquals("John", Practice.createMap(new int[] {95,10,2,6,17}, new String[] {"My","Name","Is","John","Doe"}).get("6"));
+		assertEquals("Apple", Practice.createMap(new int[] {1,2,3,4,5}, new String[] {"Hi","Tree","Gimme","An","Apple"}).get("5"));
+		assertEquals("!", Practice.createMap(new int[] {101,102,103,101,101,101}, new String[] {"Such","WOW","!","Such","Wow","!"}).get("106"));
+	}
 
+	
 }

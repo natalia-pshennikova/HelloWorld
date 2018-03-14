@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 
 public class Practice {
 	
@@ -25,4 +27,15 @@ public class Practice {
 		return numbers;
 	}
 	
+	static int[] removeDuplicates(int[] arr) {
+		return arr;
+	}
+	
+	static String removeChars(String s, char[] chars) {
+		return "";
+	}
+	
+	static Map<String, String> createMap(int[] keys, String[] values){
+		return null;
+	}
 }

@@ -22,14 +22,6 @@ public class Practice {
 	}
 	
 	static int[] remove(int[] numbers, int divider) {
-		int[] tmp = new int[numbers.length];
-		int ke = 0;
-		for(int k : numbers) {
-			if(k%divider!=0) {
-				tmp[ke] = k; ke++;}
-			
-		}
-		for(int k : tmp) System.out.println(k);
 		return numbers;
 	}
 	

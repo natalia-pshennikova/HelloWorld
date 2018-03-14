@@ -45,7 +45,7 @@ public class HelloWorld {
             case "Fr": return "Friday";
             case "Sa": return "Saturday";
             case "Su": return "Sunday";
-            default: return "No such day..."
+            default: return "No such day...";
         }
     }
 

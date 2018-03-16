@@ -13,7 +13,7 @@ class PracticeTest {
 		assertEquals(Practice.compare(9, -1), true);
 	}
 	
-	//Method returns true if    first - second = odd number 
+	//Method returns true if first - second = odd number 
 	@Test
 	void oddTest() {
 		assertTrue(Practice.odd(10, 7));
@@ -74,11 +74,11 @@ class PracticeTest {
 	// if string = "aAbBCc" and chars [a,c], then return "Bb"
 	@Test
 	void removeCharsTest() {
-		assertEquals("Hell Br", Practice.removeChars("Hello Bro", new char[] {'o'}));
-		assertEquals("Heo Bro", Practice.removeChars("Hello Bro", new char[] {'L'}));
-		assertEquals("HelloBro", Practice.removeChars("Hello Bro", new char[] {' '}));
-		assertEquals(" ", Practice.removeChars("Hello Bro", 
-				new char[] {'H','E','l','o','b','R'}));
+		assertEquals("Hellp i", Practice.removeChars("Hello Sis", new char[] {'s'}));
+		assertEquals("Heo Sis", Practice.removeChars("Hello Sis", new char[] {'L'}));
+		assertEquals("HelloSis", Practice.removeChars("Hello Sis", new char[] {' '}));
+		assertEquals(" ", Practice.removeChars("Hello Sis", 
+				new char[] {'H','E','l','o','I','s'}));
 	}	
 	
 	//Method creates a Map where int values are the key and string values are element values.
